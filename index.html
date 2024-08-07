@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--make menu-->
+      <label for="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <input type="radio" name="menu" id="menu" />
+      <input type="radio" name="close" id="close" />
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">gallery</a></li>
+          </ul>
+          <label for="close">&times;</label>
+        </nav>
+      </div>
+      <!-- end make menu-->
+      <!-- make slider-->
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/kamancheh.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/santoor.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/setar.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/tar.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- end make slider-->
+      <!--make product-->
+      <div class="products">
+        <div class="product">
+          <h2>hello-world</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            excepturi voluptatum fuga repellat blanditiis nihil quaerat fugiat
+            eligendi eveniet non delectus facilis similique cumque iste.
+            Corporis voluptatibus corrupti quia cumque voluptas dignissimos nisi
+            ducimus sit quasi, excepturi natus eveniet, non iste, quae dolorem
+            voluptate debitis eius hic fugiat repellat. Libero!
+          </p>
+          <img src="./images/santoor.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+        <div class="product">
+          <h2>hello-world</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            excepturi voluptatum fuga repellat blanditiis nihil quaerat fugiat
+            eligendi eveniet non delectus facilis similique cumque iste.
+            Corporis voluptatibus corrupti quia cumque voluptas dignissimos nisi
+            ducimus sit quasi, excepturi natus eveniet, non iste, quae dolorem
+            voluptate debitis eius hic fugiat repellat. Libero!
+          </p>
+          <img src="./images/santoor.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+        <div class="product">
+          <h2>hello-world</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            excepturi voluptatum fuga repellat blanditiis nihil quaerat fugiat
+            eligendi eveniet non delectus facilis similique cumque iste.
+            Corporis voluptatibus corrupti quia cumque voluptas dignissimos nisi
+            ducimus sit quasi, excepturi natus eveniet, non iste, quae dolorem
+            voluptate debitis eius hic fugiat repellat. Libero!
+          </p>
+          <img src="./images/santoor.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+        <div class="product">
+          <h2>hello-world</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            excepturi voluptatum fuga repellat blanditiis nihil quaerat fugiat
+            eligendi eveniet non delectus facilis similique cumque iste.
+            Corporis voluptatibus corrupti quia cumque voluptas dignissimos nisi
+            ducimus sit quasi, excepturi natus eveniet, non iste, quae dolorem
+            voluptate debitis eius hic fugiat repellat. Libero!
+          </p>
+          <img src="./images/santoor.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+      </div>
+      <!--end make product-->
+    </div>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+div.menu {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 300ms;
+  z-index: 999;
+}
+div.menu > nav {
+  width: inherit;
+}
+div.menu > nav > ul {
+  width: inherit;
+  list-style: none;
+  text-align: center;
+}
+div.menu > nav > ul > li {
+  width: auto;
+  height: inherit;
+}
+div.menu > nav > ul > li > a {
+  display: block;
+  width: auto;
+  height: inherit;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: whitesmoke;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+div.menu > nav > ul > li > a:hover {
+  background-color: darkolivegreen;
+}
+#menu,
+#close {
+  display: none;
+}
+label[for="menu"] {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  margin: 5px;
+  position: absolute;
+  z-index: 9998;
+}
+label[for="menu"] > div:nth-of-type(1) {
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  left: calc(50% - 80% / 2);
+  background-color: whitesmoke;
+  top: calc(50% - 2px / 2);
+}
+label[for="menu"] > div:nth-of-type(2) {
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  left: calc(50% - 80% / 2);
+  background-color: whitesmoke;
+  top: 12px;
+}
+label[for="menu"] > div:nth-of-type(3) {
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  left: calc(50% - 80% / 2);
+  background-color: whitesmoke;
+  bottom: 12px;
+}
+#menu:checked ~ div.menu {
+  left: 0;
+}
+label[for="close"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#close:checked ~ div.menu {
+  left: -100%;
+}
+div.slider {
+  width: 100%;
+  height: calc(100vh);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.products {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+div.products > div.product {
+  width: 50%;
+  display: inline-block;
+  background-color: rgb(146, 108, 13);
+  margin-bottom: 15px;
+}
+div.produc > div.product > h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 15px;
+}
+div.products > div.product > p {
+  margin: 15px;
+  text-align: justify;
+}
+div.products > div.product > img {
+  width: 100%;
+}
+div.products > div.product > a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgb(172, 131, 28);
+  margin: 0px auto;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  margin-bottom: 10px;
+}
